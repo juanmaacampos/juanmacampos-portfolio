@@ -36,8 +36,13 @@
     "project3_h3": "To do app",
     "project3_p1": "This was my first project using flask on a webpage in combination with a simple and small database. It just was practice from the youtube channel freeCodeCamp",
     "project3_stack": "Python Flask, SQLalchemy, HTML, CSS",
-    "project3_p2": "This was my first time using and learning a python framework and my starting point in backend developing",
+    "project3_p2": "This was my first time using and learning a python framework and github for control version and my starting point in backend developing",
     "project3_link": "View on GitHub",
+    "project4_h3": "Modern Porfolio Website",
+    "project4_p1": "This webpage is my own Portfolio totally made by me! I learned some new functions of HTML, CSS and JS.In a near future this project will be using flask to mix my frontend with my backend!",
+    "project4_stack": "HTML, CSS, JS",
+    "project4_p2": "This was my first time actually using Javascript in a real webpage to show my frontend skills. A github repo is available to show how the webpage is evolving.",
+    "project4_link": "View on GitHub",
     "contact_h2": "Contact Me",
     "contact_name_label": "Name and Surname",
     "contact_name_placeholder": "Enter your full name",
@@ -49,7 +54,7 @@
     "contact_email_link": "juanmanuelccampos@gmail.com",
     "contact_linkedin": "juanmaacampos",
     "contact_github": "juanmaacampos",
-    "footer": "© {year} Juanma Campos | This page was almost fully made by me ;)"
+    "footer": "© {year} Juanma Campos | This page was fully made by me ;)"
   },
   "es": {
     "nav_logo": "Juan Manuel Campos",
@@ -88,8 +93,12 @@
     "project3_h3": "To do app",
     "project3_p1": "Este fue mi primer proyecto usando Flask en una página web, en combinación con una base de datos sencilla y pequeña. Fue una práctica del canal de YouTube freeCodeCamp.",
     "project3_stack": "Python Flask, SQLalchemy, HTML, CSS",
-    "project3_p2": "Esta fue mi primera vez usando y aprendiendo un framework de Python y mi punto de partida en el desarrollo backend.",
+    "project3_p2": "Esta fue mi primera vez usando y aprendiendo un framework de Python y github para el control de versiones y mi punto de partida en el desarrollo backend.",
     "project3_link": "Ver en GitHub",
+    "project4_h3": "Sitio Web de Portafolio Moderno",
+    "project4_p1": "¡Esta página web es mi propio portafolio, completamente hecho por mí! Aprendí nuevas funciones de HTML, CSS y JS. En un futuro cercano, este proyecto utilizará Flask para integrar mi frontend con mi backend.",
+    "project4_stack": "HTML, CSS, JS",
+    "project4_p2": "Fue la primera vez que usé Javascript en una página web real para mostrar mis habilidades de frontend. Hay un repositorio de Github disponible para mostrar cómo evoluciona la página.",
     "contact_h2": "Contáctame",
     "contact_name_label": "Nombre y Apellido",
     "contact_name_placeholder": "Ingresa tu nombre completo",
@@ -101,7 +110,7 @@
     "contact_email_link": "juanmanuelccampos@gmail.com",
     "contact_linkedin": "juanmaacampos",
     "contact_github": "juanmaacampos",
-    "footer": "© {year} Juanma Campos | Esta página fue casi completamente hecha por mí ;)"
+    "footer": "© {year} Juanma Campos | Esta página fue completamente hecha por mí ;)"
   },
   "pt": {
     "nav_logo": "Juan Manuel Campos",
@@ -140,8 +149,12 @@
     "project3_h3": "Aplicativo de Tarefas",
     "project3_p1": "Este foi meu primeiro projeto usando Flask em uma página web, combinado com um banco de dados simples e pequeno. Foi apenas uma prática do canal freeCodeCamp no YouTube.",
     "project3_stack": "Python Flask, SQLAlchemy, HTML, CSS",
-    "project3_p2": "Foi minha primeira vez usando e aprendendo um framework Python, marcando meu ponto de partida no desenvolvimento backend.",
+    "project3_p2": "Foi a primeira vez que usei e aprendi um framework Python e GitHub para controle de versão, o que marcou meu ponto de partida no desenvolvimento de backend.",
     "project3_link": "Ver no GitHub",
+    "project4_h3": "Site de Portfólio Moderno",
+    "project4_p1": "Esta página web é o meu próprio portfólio, totalmente criado por mim! Aprendi novas funções de HTML, CSS e JS. Num futuro próximo, este projeto usará Flask para integrar meu frontend com meu backend!",
+    "project4_stack": "HTML, CSS, JS",
+    "project4_p2": "Foi a primeira vez que usei Javascript em uma página web real para mostrar minhas habilidades de frontend. Um repositório no Github está disponível para mostrar como a página está evoluindo.",
     "contact_h2": "Entre em Contato",
     "contact_name_label": "Nome e Sobrenome",
     "contact_name_placeholder": "Digite seu nome completo",
@@ -153,6 +166,6 @@
     "contact_email_link": "juanmanuelccampos@gmail.com",
     "contact_linkedin": "juanmaacampos",
     "contact_github": "juanmaacampos",
-    "footer": "© {year} Juanma Campos | Esta página foi quase inteiramente feita por mim ;)"
+    "footer": "© {year} Juanma Campos | Esta página foi inteiramente feita por mim ;)"
   }
 }

@@ -16,6 +16,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // Reemplaza con tu Public Key de EmailJS
+    })();
+  </script>
 </head>
 <body>
   <!-- HEADER -->
@@ -98,6 +105,26 @@
     <section id="projects">
       <h2 data-translate="projects_h2">My Projects</h2>
       <div class="project">
+        <a href="project3.html" class="project-img-link">
+          <img src="assets/img/todo.png" alt="To do" class="project-img">
+        </a>
+        <h3><i class="fa-solid fa-check"></i> <a href="project3.html" data-translate="project3_h3">To do app</a></h3>
+        <p data-translate="project3_p1">This was my first project using flask on a webpage in combination with a simple and small database. It just was practice from the youtube channel freeCodeCamp</p>
+        <p><strong>Stack:</strong> <span data-translate="project3_stack">Python Flask, SQLalchemy, HTML, CSS</span></p>
+        <p data-translate="project3_p2">This was my first time using and learning a python framework and my starting point in backend developing.</p>
+        <a href="https://github.com/juanmaacampos/flask-todo-app" target="_blank" rel="noopener noreferrer" data-translate="project3_link">View on GitHub</a>
+      </div>
+      <div class="project">
+        <a href="project4.html" class="project-img-link">
+          <img src="assets/img/preview.png" alt="Portfolio Webpage" class="project-img">
+        </a>
+        <h3><i class="fa-solid fa-globe"></i> <a href="project4.html" data-translate="project4_h3">Modern Porfolio Website</a></h3>
+        <p data-translate="project4_p1">This webpage is my own Portfolio totally made by me! I learned some new functions of HTML, CSS and JS.In a near future this project will be using flask to mix my frontend with my backend!</p>
+        <p><strong>Stack:</strong> <span data-translate="project4_stack">HTML, CSS, JS</span></p>
+        <p data-translate="project4_p2">This was my first time actually using Javascript in a real webpage to show my frontend skills. A github repo is available to show how the webpage is evolving.</p>
+        <a href="https://github.com/juanmaacampos/juanmacampos-portfolio" target="_blank" rel="noopener noreferrer" data-translate="project4_link">View on GitHub</a>
+      </div>
+      <div class="project">
         <a href="project1.html" class="project-img-link">
           <img src="assets/img/rasp.png" alt="Smart Inventory Control" class="project-img">
         </a>
@@ -117,23 +144,13 @@
         <p data-translate="project2_p2">This experience gave me a deeper appreciation for backend infrastructure and sparked my interest in server automation and DevOps.</p>
         <a href="https://github.com/juanmaacampos" target="_blank" rel="noopener noreferrer" data-translate="project2_link">View on GitHub</a>
       </div>
-      <div class="project">
-        <a href="project3.html" class="project-img-link">
-          <img src="assets/img/todo.png" alt="To do" class="project-img">
-        </a>
-        <h3><i class="fa-solid fa-check"></i> <a href="project3.html" data-translate="project3_h3">To do app</a></h3>
-        <p data-translate="project3_p1">This was my first project using flask on a webpage in combination with a simple and small database. It just was practice from the youtube channel freeCodeCamp</p>
-        <p><strong>Stack:</strong> <span data-translate="project3_stack">Python Flask, SQLalchemy, HTML, CSS</span></p>
-        <p data-translate="project3_p2">This was my first time using and learning a python framework and my starting point in backend developing.</p>
-        <a href="https://github.com/juanmaacampos/flask-todo-app" target="_blank" rel="noopener noreferrer" data-translate="project3_link">View on GitHub</a>
-      </div>
     </section>
 
     <div class="divider"></div>
 
     <section id="contact">
       <h2 data-translate="contact_h2">Contact Me</h2>
-      <form action="mailto:juanmanuelccampos@gmail.com" method="post" enctype="text/plain" class="contact-form">
+      <form id="contact-form" class="contact-form">
         <div class="form-group">
           <label for="name" data-translate="contact_name_label">Name and Surname</label>
           <input type="text" id="name" name="name" required placeholder="Enter your full name" data-translate-placeholder="contact_name_placeholder">
@@ -148,6 +165,7 @@
         </div>
         <button type="submit" data-translate="contact_button">Send Message</button>
       </form>
+      <div id="form-message" style="display: none; margin-top: 20px; text-align: center;"></div>
       <div class="contact-links">
         <p><i class="fas fa-envelope"></i> <a href="mailto:juanmanuelccampos@gmail.com" target="_blank" rel="noopener noreferrer" data-translate="contact_email_link">juanmanuelccampos@gmail.com</a></p>
         <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/juan-manuel-campos-83abb9326/" target="_blank" rel="noopener noreferrer" data-translate="contact_linkedin">juanmaacampos</a></p>
@@ -158,7 +176,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p data-translate="footer">© <script>document.write(new Date().getFullYear())</script> Juanma Campos | This page was fully made by me :)</p>
+    <p data-translate="footer">© <script>document.write(new Date().getFullYear())</script> Juanma Campos | This page was fully made by me ;)</p>
   </footer>
 
   <script src="assets/js/script.js"></script>
