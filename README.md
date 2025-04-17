@@ -1,4 +1,4 @@
-[Uploadi# Juan Manuel Campos - Personal Portfolio
+# Juan Manuel Campos - Personal Portfolio
 
 ![Portfolio Preview](assets/img/preview.png)
 
@@ -155,4 +155,4 @@ Feel free to reach out if you have questions, suggestions, or collaboration idea
 - **LinkedIn**: [juan-manuel-campos](https://www.linkedin.com/in/juan-manuel-campos-83abb9326/)
 - **GitHub**: [juanmaacampos](https://github.com/juanmaacampos)
 
-Thank you for visiting my portfolio! 😊ng README.markdown…]()
+Thank you for visiting my portfolio!
