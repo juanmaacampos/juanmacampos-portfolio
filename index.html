@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campos Juan Manuel</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <meta name="keywords" content="backend developer, systems engineering, raspberry pi, automation, IoT">
+  <!-- Metadatos para redes sociales -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juan Manuel Campos | Backend Developer">
+  <meta name="twitter:description" content="Systems Engineering student passionate about backend, automation and Raspberry Pi projects.">
+  <meta name="twitter:image" content="assets/img/preview.jpg">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav aria-label="Menú principal">
+      <div class="nav-logo">
+        <a href="/" class="logo" data-translate="nav_logo">Juan Manuel Campos</a>
+      </div>
+      <ul>
+        <li><a href="#about" data-translate="nav_about">About</a></li>
+        <li><a href="#skills" data-translate="nav_skills">Skills</a></li>
+        <li><a href="#projects" data-translate="nav_projects">Projects</a></li>
+        <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+      </ul>
+      <div class="language-toggle">
+        <select id="language-select" aria-label="Seleccionar idioma">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="presentation">
+      <img src="assets/img/perfil.jpeg" alt="Foto de Juan Manuel Campos" class="profile-img">
+      <h1 data-translate="presentation_h1">Juan Manuel Campos</h1>
+      <h2 data-translate="presentation_h2">Backend Developer (in training)</h2>
+      <p data-translate="presentation_p">Systems Engineering student, strongly interested in servers and automation and some other tech stuff like Raspberry Pi and IoT.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="about">
+      <h2 data-translate="about_h2">About Me</h2>
+      <p data-translate="about_p1">I'm a Systems Engineering student with a passion for building efficient and scalable backend systems. My journey started with a curiosity for how servers and networks operate, leading me to explore automation, IoT, and Raspberry Pi projects.</p>
+      <p data-translate="about_p2">Through hands-on projects like setting up home servers and developing real-time inventory systems, I've gained experience in Python, Flask, and database management. I'm always eager to learn new technologies and tackle challenging problems.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="skills">
+      <h2 data-translate="skills_h2">My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3 data-translate="skill_python_h3">Python</h3>
+          <p data-translate="skill_python_p">Building backend logic and automation scripts. I learned through Thinkpython2 from Allen Downey.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3 data-translate="skill_flask_h3">Flask</h3>
+          <p data-translate="skill_flask_p">Developing lightweight web applications.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3 data-translate="skill_sqlite_h3">SQLite</h3>
+          <p data-translate="skill_sqlite_p">Managing local databases for projects.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-microchip"></i>
+          <h3 data-translate="skill_raspberry_h3">Raspberry Pi</h3>
+          <p data-translate="skill_raspberry_p">Still learning how to use it for IOT on my projects.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-globe"></i>
+          <h3 data-translate="skill_web_h3">Light Webpages</h3>
+          <p data-translate="skill_web_p">Using HTML, CSS and a bit of JS. Just like this webpage!</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="projects">
+      <h2 data-translate="projects_h2">My Projects</h2>
+      <div class="project">
+        <a href="project1.html" class="project-img-link">
+          <img src="assets/img/rasp.png" alt="Smart Inventory Control" class="project-img">
+        </a>
+        <h3><i class="fas fa-box"></i> <a href="project1.html" data-translate="project1_h3">Smart Inventory Control</a></h3>
+        <p data-translate="project1_p1">This project introduced me to automation and backend logic using a Raspberry Pi 4. I built a real-time inventory system with sensors, Python, and a local database, accessible through a simple Flask web app.</p>
+        <p><strong>Stack:</strong> <span data-translate="project1_stack">Raspberry Pi 4, Python, Flask, HTML, CSS, SQLite, GPIO</span></p>
+        <p data-translate="project1_p2">It helped me understand how hardware and software interact, and gave me hands-on experience with web technologies, IoT, and local server hosting.</p>
+        <a href="https://github.com/juanmaacampos" target="_blank" rel="noopener noreferrer" data-translate="project1_link">View on GitHub</a>
+      </div>
+      <div class="project">
+        <a href="project2.html" class="project-img-link">
+          <img src="assets/img/server.png" alt="Home Server" class="project-img">
+        </a>
+        <h3><i class="fas fa-server"></i> <a href="project2.html" data-translate="project2_h3">Home Server</a></h3>
+        <p data-translate="project2_p1">This project helped me truly understand how computers communicate behind the scenes. I set up a local server to explore networking, remote access, and web hosting from scratch. Through it, I hosted small Flask web apps, managed file transfers with Samba, and configured basic security using UFW and Fail2Ban.</p>
+        <p><strong>Stack:</strong> <span data-translate="project2_stack">Ubuntu Server, Flask, Python, SSH, Samba, UFW</span></p>
+        <p data-translate="project2_p2">This experience gave me a deeper appreciation for backend infrastructure and sparked my interest in server automation and DevOps.</p>
+        <a href="https://github.com/juanmaacampos" target="_blank" rel="noopener noreferrer" data-translate="project2_link">View on GitHub</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="contact">
+      <h2 data-translate="contact_h2">Contact Me</h2>
+      <form action="mailto:juanmanuelccampos@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <div class="form-group">
+          <label for="name" data-translate="contact_name_label">Name and Surname</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name" data-translate-placeholder="contact_name_placeholder">
+        </div>
+        <div class="form-group">
+          <label for="email" data-translate="contact_email_label">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email" data-translate-placeholder="contact_email_placeholder">
+        </div>
+        <div class="form-group">
+          <label for="message" data-translate="contact_message_label">Message</label>
+          <textarea id="message" name="message" required placeholder="Write your message" data-translate-placeholder="contact_message_placeholder"></textarea>
+        </div>
+        <button type="submit" data-translate="contact_button">Send Message</button>
+      </form>
+      <div class="contact-links">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:juanmanuelccampos@gmail.com" target="_blank" rel="noopener noreferrer" data-translate="contact_email_link">juanmanuelccampos@gmail.com</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/juan-manuel-campos-83abb9326/" target="_blank" rel="noopener noreferrer" data-translate="contact_linkedin">juanmaacampos</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/juanmaacampos" target="_blank" rel="noopener noreferrer" data-translate="contact_github">juanmaacampos</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p data-translate="footer">© <script>document.write(new Date().getFullYear())</script> Juanma Campos | This page was fully made by me :)</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
