@@ -1,6 +1,6 @@
 [Uploadi# Juan Manuel Campos - Personal Portfolio
 
-![Portfolio Preview](assets/img/preview.jpg)
+![Portfolio Preview](assets/img/preview.png)
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and journey as a Systems Engineering student with a passion for backend development, automation, IoT, and Raspberry Pi projects. The website is fully responsive, supports multiple languages (English and Spanish), and is hosted on GitHub Pages.
 
