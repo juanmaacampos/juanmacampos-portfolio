@@ -2,7 +2,7 @@
 
 ![Portfolio Preview](assets/img/preview.png)
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and journey as a Systems Engineering student with a passion for backend development, automation, IoT, and Raspberry Pi projects. The website is fully responsive, supports multiple languages (English and Spanish), and is hosted on GitHub Pages.
+Welcome to my personal portfolio website! This project showcases my skills, projects, and journey as a Systems Engineering student with a passion for frontend and now experimenting with backend. The website is fully responsive, supports multiple languages (English, Spanish and now portuguese), and is hosted on GitHub Pages.
 
 ---
 
@@ -21,7 +21,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## About the Project
 
-This portfolio serves as a digital resume to highlight my technical skills, projects, and contact information. It was built from scratch using  web technologies and reflects my interest in backend and a little little bit of frontend. The site includes sections for my background, skills, projects, and a contact form, with dynamic language switching for accessibility.
+This portfolio serves as a digital resume to highlight my technical skills, projects, and contact information. It was built from scratch using  web technologies and reflects my interest in frontend and a little of backend. The site includes sections for my background, skills, projects, and a simple (still no backend) contact form, with dynamic language switching for accessibility.
 
 The portfolio is hosted on GitHub Pages and can be accessed at [https://juanmaacampos.github.io/juanmacampos-portfolio](https://juanmaacampos.github.io/juanmacampos-portfolio)
 
@@ -32,9 +32,9 @@ The portfolio is hosted on GitHub Pages and can be accessed at [https://juanmaac
 - **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
 - **Multilingual Support**: Switch between English and Spanish with dynamic content updates.
 - **Interactive Elements**: Animated dividers, hover effects, and a mobile-friendly menu toggle.
-- **Contact Form**: Simple form to send messages via email (expecting to be integrated with flask).
+- **Contact Form**: Simple form to send messages via JS email (expecting to be integrated with flask soon).
 - **Project Showcase**: Detailed descriptions of projects with links to GitHub repositories (not finished).
-- **SEO and Social Media**: Metadata for search engines and social media previews (not finished).
+- **SEO and Social Media**: Metadata for search engines and social media previews.
 
 ---
 
@@ -93,7 +93,7 @@ To run this project locally or contribute to it, follow these steps:
   - On mobile devices, click the menu icon (`☰`) to toggle the navigation menu.
 
 - **Switch languages**:
-  - Use the dropdown in the header to switch between English and Spanish.
+  - Use the dropdown in the header to switch between English, Spanish or Portuguese.
   - Language preferences are saved in the browser's local storage.
 
 - **Explore projects**:
@@ -101,7 +101,7 @@ To run this project locally or contribute to it, follow these steps:
   - Visit GitHub links for source code (expecting to upload the projects soon).
 
 - **Contact**:
-  - Fill out the contact form to send an email (requires a mail client configured on your device).
+  - Fill out the contact form to send an email.
   - Alternatively, use the provided email, LinkedIn, or GitHub links.
 
 ---
@@ -137,7 +137,7 @@ Contributions are welcome! If you'd like to improve the portfolio, fix bugs, or 
 
 ## Expectatives of the project:
 
-This project was made to demonstrate both skill, frontend but specially backend sooner. I have to upload this webpage using flask and some other backend projects to github too!
+This project was made to demonstrate both skills, frontend but specially backend sooner. I have to upload this webpage using flask and some other backend projects to github too!
 
 ---
 
