@@ -712,6 +712,7 @@ footer p {
   margin-bottom: 20px;
   background: linear-gradient(45deg, #1E90FF, #00CED1);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
 }
