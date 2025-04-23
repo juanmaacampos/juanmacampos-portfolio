@@ -1,0 +1,31 @@
+/* Header and Navigation */
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ...existing code for nav styles... */
+
+/* Language toggle */
+.language-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.language-toggle select {
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #1E90FF;
+    border-radius: 4px;
+    background-color: #FFF;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ...existing code for language toggle responsive... */

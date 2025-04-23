@@ -1,0 +1,42 @@
+/* Base configuration */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F8F8F8;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Utility classes */
+.divider {
+    width: 80%;
+    max-width: 800px;
+    min-width: 250px;
+    height: 2px;
+    margin: 2.5rem auto;
+    background: linear-gradient(to right, #1E90FF, #00CED1);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.divider.animate {
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% { transform: scaleX(0);}
+    100% { transform: scaleX(1);}
+}
