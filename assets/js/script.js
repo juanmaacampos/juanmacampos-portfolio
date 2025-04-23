@@ -128,4 +128,124 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('EmailJS error:', error);
       });
   });
+
+  // Modal functionality
+  const projects = document.querySelectorAll('.project');
+  const modals = document.querySelectorAll('.modal');
+  const closeBtns = document.querySelectorAll('.modal-close');
+
+  // Open modal when clicking on project
+  projects.forEach((project, index) => {
+    project.addEventListener('click', (e) => {
+      if (!e.target.matches('a[href^="https"]')) {
+        e.preventDefault();
+        modals[index].style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  // Close modal when clicking on close button or outside
+  closeBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      modals.forEach((modal) => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      });
+    });
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  });
+
+  // Info tabs functionality
+  const infoButtons = document.querySelectorAll('.info-btn');
+  infoButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const tabId = button.getAttribute('data-tab');
+      const parent = button.closest('.info-section');
+      
+      // Remove active class from all buttons in this section
+      parent.querySelectorAll('.info-btn').forEach(btn => btn.classList.remove('active'));
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Hide all info boxes in this section
+      parent.querySelectorAll('.info-display-box').forEach(box => {
+        box.style.display = 'none';
+        box.classList.add('fade');
+      });
+      
+      // Show selected info box
+      const selectedBox = parent.querySelector(`#${tabId}`);
+      selectedBox.style.display = 'block';
+      setTimeout(() => selectedBox.classList.remove('fade'), 10);
+    });
+  });
+
+  // Project modal functionality
+  const modal = document.getElementById('project-modal');
+  const modalContent = document.getElementById('modal-content-container');
+  const closeBtn = document.querySelector('.modal-close');
+
+  projects.forEach(project => {
+    project.addEventListener('click', async (e) => {
+      if (!e.target.matches('a[href^="https"]')) {
+        e.preventDefault();
+        const projectId = project.getAttribute('data-project');
+        try {
+          const response = await fetch(`projects/${projectId}.html`);
+          const content = await response.text();
+          modalContent.innerHTML = content;
+          modal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+          
+          // Initialize tab functionality for loaded content
+          initializeTabs();
+        } catch (error) {
+          console.error('Error loading project content:', error);
+        }
+      }
+    });
+  });
+
+  function initializeTabs() {
+    const infoButtons = document.querySelectorAll('.info-btn');
+    const displayBoxes = document.querySelectorAll('.info-display-box');
+    
+    infoButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const tabId = button.getAttribute('data-tab');
+        
+        infoButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        displayBoxes.forEach(box => {
+          box.style.display = 'none';
+          box.classList.add('fade');
+        });
+        
+        const selectedBox = document.getElementById(tabId);
+        selectedBox.style.display = 'block';
+        setTimeout(() => selectedBox.classList.remove('fade'), 10);
+      });
+    });
+  }
+
+  // Close modal functionality
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  });
 });

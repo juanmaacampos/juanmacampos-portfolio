@@ -116,17 +116,20 @@
 
     <section id="projects">
       <h2 data-translate="projects_h2">My Projects</h2>
-      <div class="project">
-        <a href="project3.html" class="project-img-link">
+
+      <div class="project" data-project="project3">
+        <div class="project-content">
           <img src="assets/img/todo.png" alt="To do" class="project-img">
-        </a>
-        <h3><i class="fa-solid fa-check"></i> <a href="project3.html" data-translate="project3_h3">To do app</a></h3>
-        <p data-translate="project3_p1">This was my first project using flask on a webpage in combination with a simple and small database. It just was practice from the youtube channel freeCodeCamp</p>
-        <p><strong>Stack:</strong> <span data-translate="project3_stack">Python Flask, SQLalchemy, HTML, CSS</span></p>
-        <p data-translate="project3_p2">This was my first time using and learning a python framework and my starting point in backend developing.</p>
-        <a href="https://github.com/juanmaacampos/flask-todo-app" target="_blank" rel="noopener noreferrer" data-translate="project3_link">View on GitHub</a>
+          <div class="project-info">
+            <h3><i class="fa-solid fa-check"></i> <a href="project3.html" data-translate="project3_h3">To do App</a></h3>
+            <p data-translate="project3_p1">This was my first project using flask on a webpage in combination with a simple and small database. It just was practice from the youtube channel freeCodeCamp</p>
+            <p><strong>Stack:</strong> <span data-translate="project3_stack">Python Flask, SQLalchemy, HTML, CSS</span></p>
+            <p data-translate="project3_p2">This was my first time using and learning a python framework and my starting point in backend developing.</p>
+            <a href="https://github.com/juanmaacampos/flask-todo-app" target="_blank" rel="noopener noreferrer" class="github-link" data-translate="project3_link">View on GitHub</a>
+          </div>
+        </div>
       </div>
-      <div class="project">
+      <div class="project" data-project="project4">
         <a href="project4.html" class="project-img-link">
           <img src="assets/img/preview.png" alt="Portfolio Webpage" class="project-img">
         </a>
@@ -134,9 +137,11 @@
         <p data-translate="project4_p1">This webpage is my own Portfolio totally made by me! I learned some new functions of HTML, CSS and JS.In a near future this project will be using flask to mix my frontend with my backend!</p>
         <p><strong>Stack:</strong> <span data-translate="project4_stack">HTML, CSS, JS</span></p>
         <p data-translate="project4_p2">This was my first time actually using Javascript in a real webpage to show my frontend skills. A github repo is available to show how the webpage is evolving.</p>
-        <a href="https://github.com/juanmaacampos/juanmacampos-portfolio" target="_blank" rel="noopener noreferrer" data-translate="project4_link">View on GitHub</a>
+        <div class="project-buttons">
+          <a href="https://github.com/juanmaacampos/juanmacampos-portfolio" target="_blank" rel="noopener noreferrer" data-translate="project4_link" class="github-link">View on GitHub</a>
+        </div>
       </div>
-      <div class="project">
+      <div class="project" data-project="project1">
         <a href="project1.html" class="project-img-link">
           <img src="assets/img/rasp.png" alt="Smart Inventory Control" class="project-img">
         </a>
@@ -144,9 +149,11 @@
         <p data-translate="project1_p1">This project introduced me to automation and backend logic using a Raspberry Pi 4. I built a real-time inventory system with sensors, Python, and a local database, accessible through a simple Flask web app.</p>
         <p><strong>Stack:</strong> <span data-translate="project1_stack">Raspberry Pi 4, Python, Flask, HTML, CSS, SQLite, GPIO</span></p>
         <p data-translate="project1_p2">It helped me understand how hardware and software interact, and gave me hands-on experience with web technologies, IoT, and local server hosting.</p>
-        <a href="https://github.com/juanmaacampos" target="_blank" rel="noopener noreferrer" data-translate="project1_link">View on GitHub</a>
+        <div class="project-buttons">
+          <a href="https://github.com/juanmaacampos" target="_blank" rel="noopener noreferrer" data-translate="project1_link" class="github-link">View on GitHub</a>
+        </div>
       </div>
-      <div class="project">
+      <div class="project" data-project="project2">
         <a href="project2.html" class="project-img-link">
           <img src="assets/img/server.png" alt="Home Server" class="project-img">
         </a>
@@ -154,7 +161,19 @@
         <p data-translate="project2_p1">This project helped me truly understand how computers communicate behind the scenes. I set up a local server to explore networking, remote access, and web hosting from scratch. Through it, I hosted small Flask web apps, managed file transfers with Samba, and configured basic security using UFW and Fail2Ban.</p>
         <p><strong>Stack:</strong> <span data-translate="project2_stack">Ubuntu Server, Flask, Python, SSH, Samba, UFW</span></p>
         <p data-translate="project2_p2">This experience gave me a deeper appreciation for backend infrastructure and sparked my interest in server automation and DevOps.</p>
-        <a href="https://github.com/juanmaacampos" target="_blank" rel="noopener noreferrer" data-translate="project2_link">View on GitHub</a>
+        <div class="project-buttons">
+          <a href="https://github.com/juanmaacampos" target="_blank" rel="noopener noreferrer" data-translate="project2_link" class="github-link">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Single modal template for all projects -->
+      <div id="project-modal" class="modal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <div id="modal-content-container">
+            <!-- Content will be loaded here dynamically -->
+          </div>
+        </div>
       </div>
     </section>
 
