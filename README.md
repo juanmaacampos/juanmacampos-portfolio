@@ -1,6 +1,6 @@
 # Juan Manuel Campos - Personal Portfolio
 
-![Portfolio Preview](assets/img/preview.png)
+![Portfolio Preview](assets/img/image.png)
 
 ## Description
 
