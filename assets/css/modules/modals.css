@@ -9,13 +9,18 @@
     height: 100%;
     background: rgba(0,0,0,0.5);
     overflow: hidden;
+    /* Asegura que el modal ocupe toda la altura en iOS */
+    height: 100vh; /* Fallback */
+    height: -webkit-fill-available;
+    height: 100dvh;
 }
 
 .modal-content {
     position: relative;
     width: 90%;
     max-width: 1200px;
-    height: 90vh;
+    height: 90vh; /* Fallback */
+    height: 90dvh;
     background: #FFF;
     margin: 2vh auto;
     padding: 24px 20px;
@@ -24,7 +29,9 @@
     display: flex;
     flex-direction: column;
     animation: modalFadeIn 0.3s;
+    /* Mejora el scrolling en iOS */
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .modal-close {
@@ -73,8 +80,10 @@
         position: fixed;
         inset: 0;
         width: 100vw;
+        height: 100vh; /* Fallback */
+        height: -webkit-fill-available;
         height: 100dvh;
-        min-height: 100dvh;
+        min-height: -webkit-fill-available;
         background: rgba(0,0,0,0.5);
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
@@ -84,18 +93,17 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100vw;
-        min-width: 0;
+        width: 100%;
+        min-width: 100%;
         height: auto;
+        min-height: 100vh; /* Fallback */
+        min-height: -webkit-fill-available;
         min-height: 100dvh;
-        max-height: none;
         margin: 0;
         border-radius: 0;
-        padding: 0 0 0 0;
-        aspect-ratio: unset;
+        padding: 0;
+        /* Asegura el correcto scrolling en iOS */
         overflow-y: auto;
-        box-sizing: border-box;
-        background: #fff;
         -webkit-overflow-scrolling: touch;
     }
 
@@ -211,6 +219,16 @@
         width: calc(100% - 30px);
         margin: 15px;
         padding: 20px;
+    }
+
+    #modal-content-container {
+        /* Asegura que el contenido del modal sea scrolleable */
+        height: auto;
+        min-height: 100vh; /* Fallback */
+        min-height: -webkit-fill-available;
+        min-height: 100dvh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
