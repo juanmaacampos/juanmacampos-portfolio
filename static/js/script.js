@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initializeTranslations() {
   // Load translations
   let translations = {};
-  fetch('assets/translations.json')
+  fetch('static/other_statics/translations.json')
     .then(response => response.json())
     .then(data => {
       translations = data;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campos Juan Manuel</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="static/css/style.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
   <meta name="keywords" content="backend developer, systems engineering, raspberry pi, automation, IoT">
   <!-- Metadatos para redes sociales -->
@@ -54,7 +54,7 @@
   <!-- MAIN -->
   <main>
     <section class="presentation">
-      <img src="assets/img/perfil.jpeg" alt="Foto de Juan Manuel Campos" class="profile-img">
+      <img src="static/other_statics/img/perfil.jpeg" alt="Foto de Juan Manuel Campos" class="profile-img">
       <h1 data-translate="presentation_h1">Juan Manuel Campos</h1>
       <h2 data-translate="presentation_h2">Frontend Developer, a little bit of backend</h2>
       <p data-translate="presentation_p">
@@ -119,9 +119,9 @@
 
       <div class="project" data-project="project3">
         <div class="project-content">
-          <img src="assets/img/todo.png" alt="To do" class="project-img">
+          <img src="static/other_statics/img/todo.png" alt="To do" class="project-img">
           <div class="project-info">
-            <h3><i class="fa-solid fa-check"></i> <a href="project3.html" data-translate="project3_h3">To do App</a></h3>
+            <h3><i class="fa-solid fa-check"></i> <a href="templates/pages/project3.html" data-translate="project3_h3">To do App</a></h3>
             <p data-translate="project3_p1">This was my first project using flask on a webpage in combination with a simple and small database. It just was practice from the youtube channel freeCodeCamp</p>
             <p><strong>Stack:</strong> <span data-translate="project3_stack">Python Flask, SQLalchemy, HTML, CSS</span></p>
             <p data-translate="project3_p2">This was my first time using and learning a python framework and my starting point in backend developing.</p>
@@ -130,10 +130,10 @@
         </div>
       </div>
       <div class="project" data-project="project4">
-        <a href="project4.html" class="project-img-link">
-          <img src="assets/img/preview.png" alt="Portfolio Webpage" class="project-img">
+        <a href="templates/pages/project4.html" class="project-img-link">
+          <img src="static/other_statics/img/preview.png" alt="Portfolio Webpage" class="project-img">
         </a>
-        <h3><i class="fa-solid fa-globe"></i> <a href="project4.html" data-translate="project4_h3">Modern Porfolio Website</a></h3>
+        <h3><i class="fa-solid fa-globe"></i> <a href="templates/pages/project4.html" data-translate="project4_h3">Modern Porfolio Website</a></h3>
         <p data-translate="project4_p1">This webpage is my own Portfolio totally made by me! I learned some new functions of HTML, CSS and JS.In a near future this project will be using flask to mix my frontend with my backend!</p>
         <p><strong>Stack:</strong> <span data-translate="project4_stack">HTML, CSS, JS</span></p>
         <p data-translate="project4_p2">This was my first time actually using Javascript in a real webpage to show my frontend skills. A github repo is available to show how the webpage is evolving.</p>
@@ -142,10 +142,10 @@
         </div>
       </div>
       <div class="project" data-project="project1">
-        <a href="project1.html" class="project-img-link">
-          <img src="assets/img/rasp.png" alt="Smart Inventory Control" class="project-img">
+        <a href="templates/pages/project1.html" class="project-img-link">
+          <img src="static/other_statics/img/rasp.png" alt="Smart Inventory Control" class="project-img">
         </a>
-        <h3><i class="fas fa-box"></i> <a href="project1.html" data-translate="project1_h3">Smart Inventory Control</a></h3>
+        <h3><i class="fas fa-box"></i> <a href="templates/pages/project1.html" data-translate="project1_h3">Smart Inventory Control</a></h3>
         <p data-translate="project1_p1">This project introduced me to automation and backend logic using a Raspberry Pi 4. I built a real-time inventory system with sensors, Python, and a local database, accessible through a simple Flask web app.</p>
         <p><strong>Stack:</strong> <span data-translate="project1_stack">Raspberry Pi 4, Python, Flask, HTML, CSS, SQLite, GPIO</span></p>
         <p data-translate="project1_p2">It helped me understand how hardware and software interact, and gave me hands-on experience with web technologies, IoT, and local server hosting.</p>
@@ -154,10 +154,10 @@
         </div>
       </div>
       <div class="project" data-project="project2">
-        <a href="project2.html" class="project-img-link">
-          <img src="assets/img/server.png" alt="Home Server" class="project-img">
+        <a href="templates/pages/project2.html" class="project-img-link">
+          <img src="static/other_statics/img/server.png" alt="Home Server" class="project-img">
         </a>
-        <h3><i class="fas fa-server"></i> <a href="project2.html" data-translate="project2_h3">Home Server</a></h3>
+        <h3><i class="fas fa-server"></i> <a href="templates/pages/project2.html" data-translate="project2_h3">Home Server</a></h3>
         <p data-translate="project2_p1">This project helped me truly understand how computers communicate behind the scenes. I set up a local server to explore networking, remote access, and web hosting from scratch. Through it, I hosted small Flask web apps, managed file transfers with Samba, and configured basic security using UFW and Fail2Ban.</p>
         <p><strong>Stack:</strong> <span data-translate="project2_stack">Ubuntu Server, Flask, Python, SSH, Samba, UFW</span></p>
         <p data-translate="project2_p2">This experience gave me a deeper appreciation for backend infrastructure and sparked my interest in server automation and DevOps.</p>
@@ -216,12 +216,12 @@
     <p data-translate="footer">© <script>document.write(new Date().getFullYear())</script> Juanma Campos | This page was fully made by me ;)</p>
   </footer>
 
-  <script src="assets/js/modules/translations.js"></script>
-  <script src="assets/js/modules/navigation.js"></script>
-  <script src="assets/js/modules/animations.js"></script>
-  <script src="assets/js/modules/contact.js"></script>
-  <script src="assets/js/modules/projects.js"></script>
-  <script src="assets/js/modules/tabs.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="static/js/modules/translations.js"></script>
+  <script src="static/js/modules/navigation.js"></script>
+  <script src="static/js/modules/animations.js"></script>
+  <script src="static/js/modules/contact.js"></script>
+  <script src="static/js/modules/projects.js"></script>
+  <script src="static/js/modules/tabs.js"></script>
+  <script src="static/js/script.js"></script>
 </body>
 </html>
