@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-=======
 /* Import modular CSS files */
 @import 'modules/base.css';
 @import 'modules/header.css';
 @import 'modules/modals.css';
 
->>>>>>> 1f038ae (Responsive design on mobile phones)
 /* ===========================
    BASE CONFIG
    =========================== */
