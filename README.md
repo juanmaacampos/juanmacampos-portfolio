@@ -2,157 +2,138 @@
 
 ![Portfolio Preview](assets/img/preview.png)
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and journey as a Systems Engineering student with a passion for frontend and now experimenting with backend. The website is fully responsive, supports multiple languages (English, Spanish and now portuguese), and is hosted on GitHub Pages.
+## Description
 
----
+This is my personal portfolio website,that shows my skills, projects, and professional experience. The site is built using HTML, CSS, and JavaScript, featuring a modular design with separate project pages, smooth animations, multilingual support, and a responsive layout. It serves as a professional hub to display my work and connect with potential employers or collaborators.
 
 ## Table of Contents
-- [About the Project](#about-the-project)
+
 - [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup Instructions](#setup-instructions)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
----
-
-## About the Project
-
-This portfolio serves as a digital resume to highlight my technical skills, projects, and contact information. It was built from scratch using  web technologies and reflects my interest in frontend and a little of backend. The site includes sections for my background, skills, projects, and a simple (still no backend) contact form, with dynamic language switching for accessibility.
-
-The portfolio is hosted on GitHub Pages and can be accessed at [https://juanmaacampos.github.io/juanmacampos-portfolio](https://juanmaacampos.github.io/juanmacampos-portfolio)
-
----
-
 ## Features
 
-- **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
-- **Multilingual Support**: Switch between English and Spanish with dynamic content updates.
-- **Interactive Elements**: Animated dividers, hover effects, and a mobile-friendly menu toggle.
-- **Contact Form**: Simple form to send messages via JS email (expecting to be integrated with flask soon).
-- **Project Showcase**: Detailed descriptions of projects with links to GitHub repositories (not finished).
-- **SEO and Social Media**: Metadata for search engines and social media previews.
+- **Responsive Design**: Adapts to various screen sizes using modular CSS, including optimization for iphone browser. (`base.css`, `header.css`, `style.css`).
+- **Multilingual Support**: Supports translations via `translations.js` and `translations.json`.
+- **Interactive UI**: Includes animations (`animations.js`), tabbed navigation (`tabs.js`), and smooth navigation (`navigation.js`).
+- **Project Showcase with modals**: Multiple project pages (`project1.html`, `project2.html`, etc.) for detailed project descriptions showed with modals for a better user experience.
+- **Contact Form**: Functional contact form handled by `contact.js`.
+- **Assets**:
+  - Favicon (`favicon.ico`) for branding.
+  - Images (`portfolio.jpeg`, `preview.png`, etc.) for visual content.
+  - Downloadable CV (`Juan Manuel Campos CV.pdf`).
 
----
+## Installation
 
-## Technologies Used
+To run this portfolio locally, follow these steps:
 
-- **Frontend**:
-  - HTML5
-  - CSS3 (with Flexbox and Grid)
-  - JavaScript
-- **Libraries and Frameworks**:
-  - [Font Awesome](https://fontawesome.com/) for icons
-  - [Google Fonts](https://fonts.google.com/) (Inter font)
-- **Tools**:
-  - Git for version control
-  - GitHub for hosting and deployment
-  - GitHub Pages for static site hosting
-- **Other**:
-  - JSON for language translations
-
----
-
-## Setup Instructions
-
-To run this project locally or contribute to it, follow these steps:
-
-### Installation
-1. **Clone the repository**:
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/juanmaacampos/juanmacampos-portfolio.git
-   cd juanmacampos/portfolio
    ```
 
-2. **Open the project**:
-   - Open `index.html` in a web browser to view the site locally.
-   - Alternatively, use a local development server (e.g., VS Code's Live Server extension) for a better experience:
-     ```bash
-     npx live-server
-     ```
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd juanmacampos-portfolio
+   ```
 
-3. **Modify translations (optional)**:
-   - Edit `assets/translations.json` to add or update language translations.
-   - Ensure the JSON structure matches the existing format.
-
-4. **Deploy to GitHub Pages (optional)**:
-   - Push changes to the `main` branch.
-   - Enable GitHub Pages in the repository settings:
-     - Go to **Settings** > **Pages** > Set source to `main` and folder `/ (root)`.
-     - The site will be available at `https://juanmaacampos.github.io/juanmacampos-portfolio`.
-
----
+3. **Open the Project**:
+   Since this is a static website, no additional dependencies are required. Simply open the `index.html` file in a web browser:
+   ```bash
+   open index.html
+   ```
+   Alternatively, use a local development server for a better experience (e.g., with VS Code Live Server or `http-server`):
+   ```bash
+   npx http-server
+   ```
+   Then navigate to `http://localhost:8080` in your browser.
 
 ## Usage
 
-- **Navigate the site**:
-  - Use the  navigation bar to jump to sections (`About`, `Skills`, `Projects`, `Contact`).
-  - On mobile devices, click the menu icon (`☰`) to toggle the navigation menu.
+1. **View the Portfolio**:
+   - Open the website in a browser to explore the main page (`index.html`).
+   - Navigate to individual project pages (`project1.html`, `project2.html`, etc.) to view detailed project descriptions.
+   - Use the contact form to send messages vie js email (handled by `contact.js`).
+   - Switch languages if supported (via `translations.js` and `translations.json`).
 
-- **Switch languages**:
-  - Use the dropdown in the header to switch between English, Spanish or Portuguese.
-  - Language preferences are saved in the browser's local storage.
+2. **Customize the Content**:
+   - Edit `index.html` and project pages (`project1.html`, etc.) to update personal information or project details.
+   - Modify CSS files in the `css/modules` directory (`base.css`, `header.css`, `style.css`) to adjust the design.
+   - Update JavaScript files in the `js/modules` directory (`animations.js`, `navigation.js`, etc.) for additional functionality.
+   - Add or update translations in `translations.json` and adjust `translations.js` accordingly.
 
-- **Explore projects**:
-  - Click on project titles or images to view detailed pages (e.g., `project1.html`, `project2.html`).
-  - Visit GitHub links for source code (expecting to upload the projects soon).
-
-- **Contact**:
-  - Fill out the contact form to send an email.
-  - Alternatively, use the provided email, LinkedIn, or GitHub links.
-
----
+3. **Deploy the Portfolio**:
+   - Host the site on platforms like GitHub Pages, Netlify, or Vercel.
+   - For GitHub Pages:
+     - Push the repository to GitHub.
+     - Go to the repository settings, enable GitHub Pages, and select the `main` branch.
+     - Access the live site at `https://juanmaacampos.github.io/juanmacampos-portfolio`.
 
 ## Project Structure
 
-```plaintext
+```
 juanmacampos-portfolio/
 ├── assets/
 │   ├── css/
-│   │   └── style.css           # Main stylesheet
-│   ├── img/
-│   │   ├── favicon.ico         # Favicon
-│   │   ├── perfil.jpeg         # Profile picture
-│   │   ├── preview.jpg         # Social media preview (not used yet)
-│   │   ├── rasp.png            # Project image
-│   │   └── server.png          # Project image
-│   ├── js/
-│   │   └── script.js           # Main JavaScript (language toggle, animations)
-│   └── translations.json       # Language translations
-├── index.html                  # Main HTML file
-├── project1.html               # Smart Inventory Control project page
-├── project2.html               # Home Server project page
-├── README.md                   # Project documentation
-└── .gitignore                  # Git ignore file (e.g., excludes .DS_Store, node_modules)
+│   │   └── modules/
+│   │       ├── base.css        # Base styles for the site
+│   │       ├── header.css      # Styles for the header section
+│   │       └── style.css       # Main stylesheet
+│   ├── downloads/
+│   │   └── Juan Manuel Campos CV.pdf  # Downloadable CV
+│   └── img/
+│       ├── favicon.ico         # Favicon for the site
+│       ├── portfolio.jpeg      # Portfolio image
+│       ├── preview.png         # Preview image
+│       ├── rasp.png            # Raspberry Pi-related image
+│       ├── server.png          # Server-related image
+│       └── todo.png            # To-do app image
+├── js/
+│   └── modules/
+│       ├── animations.js       # Animation scripts
+│       ├── contact.js          # Contact form functionality
+│       ├── navigation.js       # Navigation functionality
+│       ├── projects.js         # Project-related scripts
+│       ├── tabs.js             # Tabbed navigation
+│       ├── translations.js     # Translation handling
+│       └── script.js           # Main JavaScript file
+├── projects/
+│   ├── project1.html           # Project 1 page
+│   ├── project2.html           # Project 2 page
+│   ├── project3.html           # Project 3 page
+│   └── project4.html           # Project 4 page
+├── translations.json           # Translation data
+├── index.html                  # Main portfolio page
+└── README.md                   # Project documentation
 ```
 
----
+## Technologies Used
+
+- **HTML5**: Structure and semantics of the website.
+- **CSS3**: Modular styling with `base.css`, `header.css`, and `style.css`.
+- **JavaScript**: Interactivity via modular scripts (`animations.js`, `contact.js`, etc.).
+- **JSON**: Translation data stored in `translations.json`.
+- **GitHub Pages** (optional): Deployment platform for hosting the live site.
 
 ## Contributing
 
-Contributions are welcome! If you'd like to improve the portfolio, fix bugs, or suggest features, please follow these steps:
+Contributions are welcome! If you have suggestions for improvements or want to add features just do it!
 
-## Expectatives of the project:
-
-This project was made to demonstrate both skills, frontend but specially backend sooner. I have to upload this webpage using flask and some other backend projects to github too!
-
----
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details (if a license file exists, or specify if none is present).
 
 ## Contact
 
-Feel free to reach out if you have questions, suggestions, or collaboration ideas:
-
-- **Email**: [juanmanuelccampos@gmail.com](mailto:juanmanuelccampos@gmail.com)
-- **LinkedIn**: [juan-manuel-campos](https://www.linkedin.com/in/juan-manuel-campos-83abb9326/)
+- **Name**: Juan Manuel Campos
 - **GitHub**: [juanmaacampos](https://github.com/juanmaacampos)
+- **Portfolio**: [My portfolio](https://juanmaacampos.github.io/juanmacampos-portfolio/)
 
-Thank you for visiting my portfolio!
+Feel free to reach out for collaboration, feedback, or inquiries!
