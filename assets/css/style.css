@@ -48,10 +48,13 @@ nav {
     align-items: center;
 }
 .nav-logo .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1E90FF;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+}
+.nav-logo .logo img {
+    height: 40px;
+    width: auto;
 }
 nav ul {
     display: flex;
@@ -69,7 +72,7 @@ nav ul li a {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 nav ul li a:hover {
-    color: #1E90FF;
+    color: #235F87;
     transform: scale(1.05);
 }
 nav ul li a::after {
@@ -79,7 +82,7 @@ nav ul li a::after {
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: #1E90FF;
+    background-color: #235F87;
     transition: width 0.3s ease, left 0.3s ease;
 }
 nav ul li a:hover::after {
@@ -90,7 +93,7 @@ nav ul li a:hover::after {
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #1E90FF;
+    color: #235F87;
 }
 
 /* ===========================
@@ -116,11 +119,12 @@ nav ul li a:hover::after {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #235f87e3;
 }
 .presentation h2 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #666;
+    color: #011e31e0;
     margin-bottom: 20px;
 }
 .presentation p {
@@ -177,7 +181,7 @@ nav ul li a:hover::after {
 }
 .skill-card i {
     font-size: 2rem;
-    color: #1E90FF;
+    color: #235F87;
     margin-bottom: 10px;
 }
 .skill-card h3 {
@@ -199,7 +203,7 @@ nav ul li a:hover::after {
     min-width: 250px;
     height: 2px;
     margin: 2.5rem auto;
-    background: linear-gradient(to right, #1E90FF, #00CED1);
+    background: linear-gradient(to right, #235F87, #00CED1);
     border-radius: 2px;
     transform: scaleX(0);
     transform-origin: left;
@@ -260,7 +264,7 @@ nav ul li a:hover::after {
     margin-right: 8px;
 }
 .project h3 a {
-    color: #1E90FF;
+    color: #235F87;
     text-decoration: none;
     font-weight: 600;
 }
@@ -274,16 +278,16 @@ nav ul li a:hover::after {
 }
 .project a:not(h3 a):not(.project-img-link) {
     display: inline-block;
-    color: #1E90FF;
+    color: #235F87;
     font-weight: 500;
     text-decoration: none;
-    border: 1px solid #1E90FF;
+    border: 1px solid #235F87;
     padding: 8px 16px;
     border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .project a:not(h3 a):not(.project-img-link):hover {
-    background-color: #1E90FF;
+    background-color: #235F87;
     color: #FFF;
 }
 .project-buttons {
@@ -298,14 +302,14 @@ nav ul li a:hover::after {
   transition: all 0.3s ease;
   text-align: center;
   background-color: transparent;
-  border: 1px solid #1E90FF;
-  color: #1E90FF;
+  border: 1px solid #235F87;
+  color: #235F87;
   text-decoration: none;
   width: 100%;
 }
 
 .github-link:hover {
-  background-color: #1E90FF;
+  background-color: #235F87;
   color: white;
 }
 
@@ -317,7 +321,7 @@ nav ul li a:hover::after {
   flex: 1;
   text-align: center;
   cursor: pointer;
-  background-color: #1E90FF;
+  background-color: #235F87;
   border: none;
   color: white;
 }
@@ -365,8 +369,8 @@ nav ul li a:hover::after {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #1E90FF;
-    box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+    border-color: #235F87;
+    box-shadow: 0 0 5px rgba(35, 95, 135, 0.3);
 }
 .form-group textarea {
     height: 120px;
@@ -378,7 +382,7 @@ nav ul li a:hover::after {
     font-size: 1rem;
     font-weight: 500;
     color: #FFF;
-    background-color: #1E90FF;
+    background-color: #235F87;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -396,10 +400,10 @@ nav ul li a:hover::after {
 }
 .contact-links i {
     margin-right: 8px;
-    color: #1E90FF;
+    color: #235F87;
 }
 .contact-links a {
-    color: #1E90FF;
+    color: #235F87;
     text-decoration: none;
     font-weight: 500;
 }
@@ -546,7 +550,7 @@ footer p {
     padding: 8px 12px;
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
-    border: 1px solid #1E90FF;
+    border: 1px solid #235F87;
     border-radius: 4px;
     background-color: #FFF;
     color: #333;
@@ -583,7 +587,7 @@ footer p {
     font-size: 1rem;
     font-weight: 500;
     color: #FFF;
-    background-color: #1E90FF;
+    background-color: #235F87;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -650,7 +654,7 @@ footer p {
   top: 12px;
   right: 18px;
   font-size: 2rem;
-  color: #1E90FF;
+  color: #235F87;
   cursor: pointer;
   font-weight: bold;
   transition: color 0.2s;
@@ -715,7 +719,7 @@ footer p {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(45deg, #1E90FF, #00CED1);
+  background: linear-gradient(45deg, #235F87, #00CED1);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -730,7 +734,7 @@ footer p {
   font-weight: 400;
 }
 .project-title-box .project-category {
-  color: #1E90FF;
+  color: #235F87;
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -819,11 +823,11 @@ footer p {
 }
 .info-btn i {
   font-size: 1.2rem;
-  color: #1E90FF;
+  color: #235F87;
   transition: transform 0.3s ease;
 }
 .info-btn:hover, .info-btn.active {
-  background: #1E90FF;
+  background: #235F87;
   color: white;
   transform: translateX(8px);
 }

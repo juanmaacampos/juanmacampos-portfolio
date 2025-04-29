@@ -26,7 +26,7 @@ main {
     min-width: 250px;
     height: 2px;
     margin: 2.5rem auto;
-    background: linear-gradient(to right, #1E90FF, #00CED1);
+    background: linear-gradient(to right, #235F87, #00CED1);
     border-radius: 2px;
     transform: scaleX(0);
     transform-origin: left;
